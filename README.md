@@ -10,7 +10,7 @@ Yup that's it, just type up the image you want in a valid square or rectangle an
 
 Simply clone this repo and whatever you need for raylib to work then use `cargo run <Path to ligma file>`
 
-Currently ligma can only use red green and blue pixels too
+Currently ligma can only use red green blue and yellow pixels too
 
 ## Features 
 | Features    |        |

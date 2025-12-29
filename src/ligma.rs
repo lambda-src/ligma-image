@@ -4,7 +4,8 @@ use raylib::color;
 pub enum LigmaColor {
     Red,
     Green,
-    Blue
+    Blue,
+    Yellow
 }
 
 type LigmaShape = Vec<Vec<LigmaColor>>;
@@ -23,6 +24,7 @@ impl From<&str> for LigmaColor {
             "modrá" | "сіні" | "mėlyna" | "sinine" | "kék" | "синій" | "modro" | "plava" |
             "көк" | "блакитний" | "blå" | "ლურჯი" | "синo" | "כָּחוֹל" | "синьо" | "น้ำเงิน" | "koke" |
             "sinez" | "biru" | "ula" => Self::Blue,
+            "yellow" => Self::Yellow,
             _ => panic!("Not a real color bro"),
         }
     }
@@ -33,7 +35,8 @@ impl From<LigmaColor> for color::Color {
         match value {
             LigmaColor::Red => Self::RED,
             LigmaColor::Green => Self::GREEN,
-            LigmaColor::Blue => Self::BLUE
+            LigmaColor::Blue => Self::BLUE,
+            LigmaColor::Yellow => Self::YELLOW
         }
     }
 }
